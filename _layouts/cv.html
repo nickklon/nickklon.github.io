@@ -1,0 +1,23 @@
+---
+layout: page
+---
+<div class="cv-content">
+    {{ content }}
+</div>
+
+<div class="cv-certs">
+    {% if page.badges %}
+    <h3>Certifications</h3>
+    <div class="cv-badges">
+        {% for badge in page.badges %}
+        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id={{badge.id}}
+             data-share-badge-host="https://www.credly.com"></div>
+        <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+        {% endfor %}
+    </div>
+    {% endif %}
+</div>
+
+<!-- include cv.css -->
+<link rel="stylesheet" href="/assets/css/cv.css">
+
