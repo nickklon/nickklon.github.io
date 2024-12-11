@@ -1,0 +1,35 @@
+/* For desktop, badges are veritcal on the right sidebar */
+.cv-certs {
+    padding: 10px;
+    background-color: #f8f8f8;
+    height: 100%;
+    width: 150px;
+    float: right;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+}
+
+.cv-content {
+    float: left;
+    width: calc(100% - 180px);
+}
+
+/* for mobile, badges are a single horizontal row on the top, with an overflow scroll for the x direction */
+@media (max-width: 768px) {
+    .cv-certs {
+        height: min-content;
+        width: 90%;
+        margin: 0 auto;
+        float: none;
+    }
+
+    .cv-badges {
+        overflow-x: scroll;
+        white-space: nowrap;
+    }
+
+    .cv-content {
+        width: 100%;
+        float: none;
+    }
+}

@@ -1,0 +1,12 @@
+---
+---
+User-agent: *
+Disallow: /cv/
+
+User-agent: Googlebot
+User-agent: DuckDuckBot
+User-agent: Bingbot
+Allow: /
+
+User-agent: *
+Disallow: /
