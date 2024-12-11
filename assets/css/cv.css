@@ -11,13 +11,15 @@
 
 .cv-content {
     float: left;
+    width: calc(100% - 180px);
 }
 
 /* for mobile, badges are a single horizontal row on the top, with an overflow scroll for the x direction */
 @media (max-width: 768px) {
     .cv-certs {
         height: min-content;
-        width: 100%;
+        width: 90%;
+        margin: 0 auto;
         float: none;
     }
 
@@ -27,6 +29,7 @@
     }
 
     .cv-content {
+        width: 100%;
         float: none;
     }
 }
