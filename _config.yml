@@ -20,12 +20,13 @@
 
 title: "work in progress"
 #email: your-email@example.com
+author:
+  name: "Nick Klonne"
+  email: ""
 description: >- # this means to ignore newlines until "baseurl:"
-  A playground for writing and development.
+  a playground for writing and development.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-#twitter_username: jekyllrb
-github_username:  nickklon
 
 header_pages:
   - cv.md
@@ -35,6 +36,13 @@ header_pages:
 theme: minima
 plugins:
   - jekyll-feed
+
+minima:
+  skin: classic
+  social_links:
+  - { platform: linkedin, user_url: "https://www.linkedin.com/in/nicholas-klonne/" }
+  - { platform: github, user_url: "https://github.com/nickklon" }
+  - { platform: stackoverflow,  user_url: "https://stackoverflow.com/users/19439460/nickklon" }
 
 # Exclude from processing.
 # The following items will not be processed, by default.
